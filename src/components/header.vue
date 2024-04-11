@@ -24,12 +24,14 @@
   display: flex;
   align-items: center;
 
-  padding: 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .4);
 }
 
-.header__logo {}
+.header__logo {
+  width: 30px;
+}
 
 .header__menu {
   display: flex;
@@ -52,7 +54,9 @@
   color: white;
 }
 
-.header__menuIcon {}
+.header__menuIcon {
+  width: 20px;
+}
 
 
 </style>

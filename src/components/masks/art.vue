@@ -51,7 +51,7 @@ onMounted(() => {
     <img class="cover__img" src="/img/4.jpg" alt="">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="0" heigth="0">
-      <clipPath id="maskm" clipPathUnits="objectBoundingBox">
+      <clipPath id="artm" clipPathUnits="objectBoundingBox">
         <rect class="mpart upAnim" x="0.942871" y="0.148315" width="0.0520526" height="0.70438" fill="black"/>
         <rect class="mpart downAnim" x="0.00610352" y="0.148315" width="0.0520526" height="0.70438" fill="black"/>
         <rect class="mpart downAnim" x="0.884277" y="0.139709" width="0.0520526" height="0.72156" fill="black"/>
@@ -79,13 +79,14 @@ onMounted(() => {
 <style>
 .cover {
   width: 100%;
-  clip-path: url(#maskm);
 }
 
 .cover__img {
   width: 100%;
+  height: 600px;
   object-fit: cover;
   object-position: center;
+  clip-path: url(#artm);
 }
 
 .mpart {
