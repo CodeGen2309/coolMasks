@@ -1,33 +1,36 @@
 <script setup>
-import artVue from "@/components/masks/art.vue";
+import rainVue from "@/components/masks/rain.vue";
 import pageTitle from "@/components/pageTitle.vue";
-import tiles from "@/components/tiles.vue"
+import tiles from "@/components/tiles.vue";
 
 </script>
 
 <template>
-  <div class="home__holder">
-    <artVue class="home__cover"></artVue>
-    <pageTitle class="home__title" title="Корпорация ЖБК -1" />
+  <div class="rest__holder">
+    <page-title class="rest__title" title="Недвижимость ЖБК - 1"></page-title>
+    <rainVue class="rest__cover"></rainVue>
     <tiles class="home__tiles"></tiles>
   </div>
 </template>
 
 
+
+
 <style>
-.home__holder {
+.rest__holder {
   position: relative;
   display: flex;
   align-items: flex-end;
   height: 90vh;
+
 }
 
-.home__cover {
+.rest__cover {
   position: absolute;
 }
 
 
-.home__title {
+.rest__title {
   position: absolute;
   top: 100px;
   width: 400px;

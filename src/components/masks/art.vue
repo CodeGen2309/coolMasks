@@ -5,9 +5,7 @@ import { onMounted } from "vue"
 function mountedAnim () {
   animate(
     '.upAnim',
-    { 
-      translateY: [0.1, 0],
-    },
+    {  translateY: [0.1, 0], },
     { duration: 2 }
   )
 
@@ -28,11 +26,30 @@ function mountedAnim () {
 function  staticAnim () {
   animate(
     '.mpart',
-    { 
-      scale: [1.03, 1.12, 1.03],
-      // translateY: [ 0, 0.05, -0.05, 0 ]
-    },
-    { duration:10, repeat:Infinity, delay: stagger(0.1), easing: "linear" }
+    {  scale: [1.03, 1.2, 1.03], },
+    { duration:15, repeat:Infinity, delay: stagger(0.7), easing: "linear" }
+  )
+
+}
+
+
+function exitAnim () {
+  animate(
+    '.upAnim',
+    {  translateY: [0, -0.1], },
+    { duration: 2 }
+  )
+
+  animate(
+    '.cover__img',
+    { opacity: [1, 0] },
+    { duration: 2 }
+  )
+
+  animate(
+    '.downAnim',
+    { translateY: [0, 0.1] },
+    { duration: 2 }
   )
 
 }
@@ -41,6 +58,7 @@ function  staticAnim () {
 onMounted(() => { 
   mountedAnim()
   staticAnim()
+  // exitAnim()
 })
 
 </script>
@@ -48,7 +66,7 @@ onMounted(() => {
 
 <template>
   <div class="cover">
-    <img class="cover__img" src="/img/4.jpg" alt="">
+    <img class="cover__img" src="/img/14.jpg" alt="">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="0" heigth="0">
       <clipPath id="artm" clipPathUnits="objectBoundingBox">
@@ -83,7 +101,7 @@ onMounted(() => {
 
 .cover__img {
   width: 100%;
-  height: 600px;
+  height:90vh;
   object-fit: cover;
   object-position: center;
   clip-path: url(#artm);
