@@ -43,6 +43,7 @@
   padding: 10px 20px;
   box-sizing: border-box;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .4);
+  background: white;
 }
 
 .header__logo {

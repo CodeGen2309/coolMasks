@@ -19,7 +19,7 @@ function  staticAnim () {
     { 
       scaleX: [1, 1.1, 1],
     },
-    { duration:10, repeat:Infinity, delay: stagger(0.3), easing: "linear" }
+    { duration:15, repeat:Infinity, delay: stagger(0.3), easing: "linear" }
   )
 
 }
@@ -53,74 +53,78 @@ onMounted(() => {
 <template>
   <div class="wallm">
     <img class="wallm__img" src="/img/11.jpg" alt="">
-    <!-- <clipPath id="artm" clipPathUnits="objectBoundingBox">-->
+    <!-- <clipPath id="wallm" clipPathUnits="objectBoundingBox">-->
 
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <clipPath id="wallm" clipPathUnits="objectBoundingBox">
-        <rect class="wallm__part" x="0.137207" y="0.47998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.222168" y="0.630005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.630005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.780029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.72998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.880005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.280029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.579956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.137207" y="0.579956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.72998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.180054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.380005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.380005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.280029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.530029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.180054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.47998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.0799561" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.47998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.630005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.780029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.72998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.880005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.280029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.380005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.579956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.680054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.829956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.477051" y="0.180054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.47998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.0799561" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.430054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.579956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.680054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.829956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.22998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.222168" y="0.530029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.0517578" y="0.530029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.307129" y="0.680054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.329956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.630005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.780029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.22998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.430054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.329956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.47998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.130005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.530029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.130005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.222168" y="0.430054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.579956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.680054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.646973" y="0.829956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.22998" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.530029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.39209" y="0.130005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.731934" y="0.329956" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.562012" y="0.430054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.380005" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.280029" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.180054" width="0.16" height="0.04" fill="white"/>
-        <rect class="wallm__part" x="0.816895" y="0.0799561" width="0.16" height="0.04" fill="white"/>
-      </clipPath>
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="wallm" clipPathUnits="objectBoundingBox">
+          <rect class="wallm__part" x="0.137207" y="0.47998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.137207" y="0.680054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.0517578" y="0.22998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.280029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.579956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.137207" y="0.380005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.180054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.380005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.380005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.280029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.530029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.72998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.180054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.47998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.680054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.0799561" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.47998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.680054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.22998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.130005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.280029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.380005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.579956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.780029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.329956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.137207" y="0.180054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.477051" y="0.180054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.47998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.680054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.0799561" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.430054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.630005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.579956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.780029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.307129" y="0.0799561" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.22998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.530029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.0517578" y="0.329956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.329956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.137207" y="0.280029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.22998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.430054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.630005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.329956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.47998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.680054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.130005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.530029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.72998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.130005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.430054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.222168" y="0.630005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.579956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.646973" y="0.780029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.22998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.530029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.72998" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.39209" y="0.130005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.731934" y="0.329956" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.430054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.562012" y="0.630005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.380005" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.280029" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.180054" width="0.16" height="0.04" fill="white"/>
+          <rect class="wallm__part" x="0.816895" y="0.0799561" width="0.16" height="0.04" fill="white"/>
+        </clipPath>
+      </svg>
+
 
   </div>  
 </template>
@@ -128,19 +132,23 @@ onMounted(() => {
 
 <style>
 .wallm {
+  position: relative;
   width: 100%;
 }
 
 .wallm__img {
-  width: 100%;
-  height: 90vh;
+  position: absolute;
+  top: 0; right: 0;
+
+  height: 70vh;
+  width: 90%;
   object-fit: cover;
-  object-position: center;
+  object-position: bottom;
   clip-path: url(#wallm);
 }
 
 #wallm {
-  transform: scale(1.1) translateY(-50px) translateX(100px);
+  transform: translateY(-50px) scaleX(1.3) translateX(-150px);
 }
 
 .wallm__part {

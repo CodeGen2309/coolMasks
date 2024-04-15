@@ -101,10 +101,11 @@ onMounted(() => {
 
 
 .rainm__img {
-  width: 100%;
-  height: 90vh;
+  position: absolute;
+  right: 0;
+  width: 100%; height: 80vh;
   object-fit: cover;
-  object-position: center;
+  object-position: right;
   clip-path: url(#rainm);
 }
 
@@ -112,7 +113,7 @@ onMounted(() => {
   /* transform-box: fill-box; */
   /* transform-origin: center; */
 
-  transform: rotate(20deg)  translateY(-600px) translateX(650px) scale(1.3);
+  transform: rotate(20deg)  translateY(-650px) translateX(400px) scaleX(1.6);
 }
 
 .rainpart {

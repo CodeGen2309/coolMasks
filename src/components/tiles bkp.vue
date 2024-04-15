@@ -4,48 +4,6 @@ import { onMounted } from 'vue';
 
 defineProps([ 'tiles' ])
 
-let tilesBkp = [
-  {
-    image: '/img/tiles/1.jpg', title: 'Наши обьекты',
-    grow: 1,
-  },
-
-  {
-    image: '/img/tiles/2.jpg', title: 'Квартира дня',
-    grow: 2,
-  },
-
-  {
-    image: '/img/tiles/3.jpg', title: 'Дюплексы Новая Заря',
-    grow: 1,
-  },
-
-  {
-    image: '/img/tiles/4.jpg', title: 'ЖК Новая Заря',
-    grow: 3,
-  },
-
-  {
-    image: '/img/tiles/5.jpg', title: 'Новые Сады',
-    grow: 1,
-  },
-
-  {
-    image: '/img/tiles/6.jpg', title: 'Вектор Успеха',
-    grow: 2,
-  },
-
-  {
-    image: '/img/tiles/7.jpg', title: 'Тротуарная плитка',
-    grow: 1,
-  },
-
-  {
-    image: '/img/tiles/8.jpg', title: 'Акции и скидки',
-    grow: 1,
-  },
-
-]
 
 onMounted(() => {
   animate(
@@ -61,7 +19,7 @@ onMounted(() => {
 <template>
   <div class="tile__holder">
     <div class="tile" v-for="item of tiles" :key="item.title"
-    :style="`${item.style}`"
+    :style="`flex-grow: ${item.grow}`"
     >
       <img class="tile__img" :src="item.image" alt="">
       <p class="tile__text">{{ item.title }}</p>
@@ -72,21 +30,20 @@ onMounted(() => {
 <style>
 
 .tile__holder {
-  display: grid;
-  grid-auto-flow: column dense;
-
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 20px;
 }
 
 .tile {
   position: relative;
-  min-width: 200px; min-height: 200px;
 
   display: flex;
   justify-content: stretch;
   align-items: end;
 
+  width: 300px; height: 200px;
   border: 2px solid white;
   border-radius: 4px;
 
@@ -110,7 +67,7 @@ onMounted(() => {
 .tile__img {
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%; height: 200px;
 
   object-fit: cover;
   object-position: center;

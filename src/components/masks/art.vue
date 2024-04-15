@@ -97,13 +97,18 @@ onMounted(() => {
 <style>
 .cover {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .cover__img {
-  width: 100%;
-  height:90vh;
+  position: absolute;
+  width: 100%; height:70vh;
+  /* filter: brightness(1.2); */
+
   object-fit: cover;
   object-position: center;
+
   clip-path: url(#artm);
 }
 
