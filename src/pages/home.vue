@@ -82,5 +82,6 @@ let tilesBkp = [
 
 .home__tiles {
   position: relative;
+  width: 100%;
 }
 </style>

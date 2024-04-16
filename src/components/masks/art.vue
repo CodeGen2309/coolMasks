@@ -66,7 +66,7 @@ onMounted(() => {
 
 <template>
   <div class="cover">
-    <img class="cover__img" src="/img/14.jpg" alt="">
+    <img class="cover__img" src="/img/15.jpg" alt="">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="0" heigth="0">
       <clipPath id="artm" clipPathUnits="objectBoundingBox">
@@ -104,7 +104,7 @@ onMounted(() => {
 .cover__img {
   position: absolute;
   width: 100%; height:70vh;
-  /* filter: brightness(1.2); */
+  filter: saturate(2) contrast(1.2);
 
   object-fit: cover;
   object-position: center;

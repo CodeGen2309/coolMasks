@@ -7,21 +7,15 @@
   <img class="header__logo" src="/icons/ZHBK_logo 1.svg">
 
   <ul class="header__menu">
-    <li class="header__menuItem">
-      <router-link  class="header__menuLink" to="/zavod">
-        завод
-      </router-link>
-    </li>
-    <li class="header__menuItem">
-      <router-link class="header__menuLink" to="/real-estate">
-        недвижимость
-      </router-link>
-    </li>
-    <li class="header__menuItem">
-      <router-link class="header__menuLink" to="/">
-        копорация
-      </router-link>
-    </li>
+    <router-link  class="header__menuLink header__menuItem" to="/zavod">
+      завод
+    </router-link>
+    <router-link class="header__menuLink header__menuItem" to="/real-estate">
+      недвижимость
+    </router-link>
+    <router-link class="header__menuLink header__menuItem" to="/">
+      копорация
+    </router-link>
     <li class="header__menuItem">
       акции
     </li>
@@ -40,9 +34,9 @@
   display: flex;
   align-items: center;
 
-  padding: 10px 20px;
+  padding: 0 20px;
   box-sizing: border-box;
-  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .4);
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .2);
   background: white;
 }
 
@@ -61,13 +55,15 @@
 }
 
 .header__menuItem {
-  padding: 10px 30px;
+  padding: 20px 30px;
+  font-weight: 100;
   cursor: pointer;
   transition: .3s;
 }
 
 .header__menuItem:hover {
-  background: rgba(0, 0, 0, .4);
+  background: rgb(107, 172, 236);
+  padding: 20px 50px;
   color: white;
 }
 

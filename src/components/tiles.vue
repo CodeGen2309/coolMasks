@@ -120,6 +120,7 @@ onMounted(() => {
 .tile__text {
   margin: 0; padding: 20px 10px;
   background: rgba(255, 255, 255, .9);
+  font-weight: 400;
   width: 100%;
 
   position: relative;

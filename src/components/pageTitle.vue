@@ -30,6 +30,7 @@ defineProps(['title'])
 .ptitle__text {
   position: absolute;
   color: white;
+  font-weight: 500;
 }
 
 .ptitle__decor {

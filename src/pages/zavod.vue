@@ -5,8 +5,12 @@ import tiles from "@/components/tiles.vue";
 
 let tileContent = [
   {
-    image: '/img/tiles/7.jpg', title: 'Тротуарная плитка',
+    image: '/img/tiles/im.jpg', title: 'Интернет - магазин',
     style: 'grid-row: span 2; grid-column: span 3',
+  },
+
+  {
+    image: '/img/tiles/7.jpg', title: 'Тротуарная плитка',
   },
 
   {
@@ -30,7 +34,7 @@ let tileContent = [
 
   {
     image: '/img/tiles/6.jpg', title: 'Плитка "Терасса"',
-    style: 'grid-column: span 2;',
+    // style: 'grid-column: span 2;',
   },
 ]
 

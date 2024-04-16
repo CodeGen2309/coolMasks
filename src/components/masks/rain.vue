@@ -22,32 +22,10 @@ async function  staticAnim () {
 
 }
 
-function exitAnim () {
-  animate(
-    '.fadeDown',
-    { translateY: [0, 0.2] },
-    { duration:2 }
-  )
-
-  animate(
-    '.fadeUp',
-    { translateY: [0, -0.2] },
-    { duration:2 }
-  )
-
-  animate(
-    '.rainm__img',
-    { opacity: [1, 0] },
-    {duration:1}
-  )
-}
-
-
 
 onMounted(() => { 
   mountedAnim()
   staticAnim()
-  // exitAnim()
 })
 
 </script>
@@ -110,10 +88,11 @@ onMounted(() => {
 }
 
 #rainm {
-  /* transform-box: fill-box; */
-  /* transform-origin: center; */
+  transform-box: fill-box;
+  transform-origin: center;
 
   transform: rotate(20deg)  translateY(-650px) translateX(400px) scaleX(1.6);
+  /* transform: rotate(60deg)  translateY(-1700px) translateX(100px) scale(1.3); */
 }
 
 .rainpart {

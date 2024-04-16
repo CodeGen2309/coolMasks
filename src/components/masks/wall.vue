@@ -16,9 +16,7 @@ function mountedAnim () {
 function  staticAnim () {
   animate(
     '.wallm__part',
-    { 
-      scaleX: [1, 1.1, 1],
-    },
+    {  scaleX: [1, 1.2, 1], },
     { duration:15, repeat:Infinity, delay: stagger(0.3), easing: "linear" }
   )
 
@@ -52,8 +50,7 @@ onMounted(() => {
 
 <template>
   <div class="wallm">
-    <img class="wallm__img" src="/img/11.jpg" alt="">
-    <!-- <clipPath id="wallm" clipPathUnits="objectBoundingBox">-->
+    <img class="wallm__img" src="/img/17.jpg" alt="">
 
       <svg xmlns="http://www.w3.org/2000/svg">
         <clipPath id="wallm" clipPathUnits="objectBoundingBox">
@@ -140,7 +137,7 @@ onMounted(() => {
   position: absolute;
   top: 0; right: 0;
 
-  height: 70vh;
+  height: 80vh;
   width: 90%;
   object-fit: cover;
   object-position: bottom;
@@ -148,7 +145,7 @@ onMounted(() => {
 }
 
 #wallm {
-  transform: translateY(-50px) scaleX(1.3) translateX(-150px);
+  transform: translateY(-50px) scaleX(1.3) translateX(-200px);
 }
 
 .wallm__part {
