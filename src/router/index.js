@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'zavod',
       component: () => import('../pages/zavod.vue')
     },
+    {
+      path: '/land',
+      name: 'land',
+      component: () => import('../pages/landing.vue')
+    },
   ]
 })
 

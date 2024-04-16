@@ -6,7 +6,7 @@ function mountedAnim () {
   animate(
     '.upAnim',
     {  translateY: [0.1, 0], },
-    { duration: 2 }
+    { duration: 4}
   )
 
   animate(
@@ -18,7 +18,7 @@ function mountedAnim () {
   animate(
     '.downAnim',
     { translateY: [-0.1, 0] },
-    { duration: 2 }
+    { duration: 4},
   )
 }
 

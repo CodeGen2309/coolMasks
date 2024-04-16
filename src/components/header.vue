@@ -16,6 +16,9 @@
     <router-link class="header__menuLink header__menuItem" to="/">
       копорация
     </router-link>
+    <router-link class="header__menuLink header__menuItem" to="/land">
+      лэндинг
+    </router-link>
     <li class="header__menuItem">
       акции
     </li>

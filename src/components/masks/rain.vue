@@ -5,7 +5,7 @@ import { onMounted } from "vue"
 function mountedAnim () {
   animate(
     '.rainpart',
-    { scaleY: [0, 1.7] },
+    { scaleY: [0, 2] },
     { duration:2, delay: stagger(0.1) }
   )
 }
