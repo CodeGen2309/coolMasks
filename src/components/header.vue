@@ -4,30 +4,23 @@
 
 <template>
 <header class="header">
-  <img class="header__logo" src="/icons/ZHBK_logo 1.svg">
+  <img class="header__menuIcon" src="/icons/heroicons-solid_menu.svg" alt="">
 
   <ul class="header__menu">
     <router-link  class="header__menuLink header__menuItem" to="/zavod">
-      завод
+      Завод ЖБК - 1
     </router-link>
-    <router-link class="header__menuLink header__menuItem" to="/real-estate">
-      недвижимость
-    </router-link>
+    
     <router-link class="header__menuLink header__menuItem" to="/">
-      копорация
+      Копорация
     </router-link>
-    <router-link class="header__menuLink header__menuItem" to="/land">
-      лэндинг
+
+    <router-link class="header__menuLink header__menuItem" to="/real-estate">
+      Недвижимость
     </router-link>
-    <li class="header__menuItem">
-      акции
-    </li>
-    <li class="header__menuItem">
-      контакты
-    </li>
   </ul>
 
-  <img class="header__menuIcon" src="/icons/heroicons-solid_menu.svg" alt="">
+  <img class="header__logo" src="/icons/ZHBK_logo 1.svg">
 </header>
 </template>
 
@@ -78,6 +71,7 @@
 
 .header__menuIcon {
   width: 20px;
+  cursor: pointer;
 }
 
 </style>

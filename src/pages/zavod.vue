@@ -5,35 +5,42 @@ import tiles from "@/components/tiles.vue";
 
 let tileContent = [
   {
-    image: '/img/tiles/im.jpg', title: 'Интернет - магазин',
+    image: '/test/img/tiles/zavod/im.jpg', title: 'Интернет - магазин',
     style: 'grid-row: span 2; grid-column: span 3',
+    link: '/',
   },
 
   {
-    image: '/img/tiles/7.jpg', title: 'Тротуарная плитка',
+    image: '/test/img/tiles/zavod/price.jpg', title: 'Прайс-листы',
+    link: '/',
   },
 
   {
-    image: '/img/tiles/1.jpg', title: 'Прайс листы',
+    image: '/test/img/tiles/zavod/conacts.jpg', title: 'Контакты',
+    link: '/',
   },
 
   {
-    image: '/img/tiles/2.jpg', title: 'Детское игровое оборудование',
+    image: '/test/img/tiles/zavod/dostavka.jpg', title: 'Доставка',
     style: 'grid-column: span 2;',
+    link: '/',
   },
 
   {
-    image: '/img/tiles/3.jpg', title: 'Межкомнатные двери',
+    image: '/test/img/tiles/zavod/gallery.jpg', title: 'Галерея',
+    link: '/',
   },
 
   {
-    image: '/img/tiles/4.jpg', title: 'Скамейки и урны',
+    image: '/test/img/tiles/zavod/akcii.jpg', title: 'Акции и скидки',
     style: 'grid-column: span 2;',
+    link: '/',
   },
 
 
   {
-    image: '/img/tiles/6.jpg', title: 'Плитка "Терасса"',
+    image: '/test/img/tiles/zavod/news.jpg', title: 'Блог',
+    link: '/',
     // style: 'grid-column: span 2;',
   },
 ]
@@ -74,7 +81,7 @@ let tileContent = [
 }
 
 .zvd__tiles {
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 </style>

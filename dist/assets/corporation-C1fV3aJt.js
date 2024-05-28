@@ -1,0 +1,1 @@
+/* empty css                                            */import{_ as o}from"./rain-CBCKrjzY.js";/* empty css                                             */import{e as r,a as t}from"./index-C16x5SgS.js";import"./animate.es-D1Wejsac.js";const n={__name:"corporation",setup(a){return(e,p)=>(t(),r(o))}};export{n as default};

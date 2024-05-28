@@ -5,34 +5,39 @@ import tiles from "@/components/tiles.vue";
 
 let tileContent = [
   {
-    image: '/img/tiles/6.jpg', title: 'Школа "Вектор Успеха"',
+    image: '/test/img/tiles/nedv/obj.jpg', title: 'Объекты строительства',
     grow: 2, style: 'grid-column: span 2; grid-row: span 2',
   },
 
   {
-    image: '/img/tiles/1.jpg', title: 'Наши обьекты',
+    image: '/test/img/tiles/nedv/price.jpg', title: 'Прайс-лист',
     style: 'grid-column: span 2',
   },
 
   {
-    image: '/img/tiles/2.jpg', title: 'Квартира дня',
+    image: '/test/img/tiles/nedv/komm.jpg', title: 'Коммерческая недвижимость',
   },
 
   {
-    image: '/img/tiles/3.jpg', title: 'Дюплексы Новая Заря',
+    image: '/test/img/tiles/nedv/garages.jpg', title: 'Гаражи',
     style: ' grid-column: span 2 ',
   },
 
   {
-    image: '/img/tiles/4.jpg', title: 'ЖК Новая Заря',
+    image: '/test/img/tiles/nedv/kak.jpg', title: 'Как купить',
   },
 
   {
-    image: '/img/tiles/5.jpg', title: 'Акции и скидки',
+    image: '/test/img/tiles/nedv/akcii.jpg', title: 'Акции и скидки',
+    style: ' grid-column: span 2 ',
   },
 
   {
-    image: '/img/tiles/7.jpg', title: 'Ставки от банков - партнеров',
+    image: '/test/img/tiles/nedv/vopros.jpg', title: 'Вопрос-ответ',
+  },
+
+  {
+    image: '/test/img/tiles/nedv/jnk.jpg', title: 'ЖНК ЖБК - 1',
   },
 ]
 

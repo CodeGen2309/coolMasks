@@ -60,12 +60,13 @@ onMounted(() => {
 
 <template>
   <div class="tile__holder">
-    <div class="tile" v-for="item of tiles" :key="item.title"
+    <a class="tile" v-for="item of tiles" :key="item.title"
+    :href="item.link"
     :style="`${item.style}`"
     >
       <img class="tile__img" :src="item.image" alt="">
       <p class="tile__text">{{ item.title }}</p>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -89,6 +90,10 @@ onMounted(() => {
 
   border: 2px solid white;
   border-radius: 4px;
+
+  text-decoration: none;
+  color: inherit;
+
 
   box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .5);
   transition: .3s;

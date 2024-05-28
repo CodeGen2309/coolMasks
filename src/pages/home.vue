@@ -4,44 +4,38 @@ import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue"
 
 let tilesBkp = [
-  {
-    image: '/img/tiles/6.jpg', title: 'Школа "Вектор Успеха"',
-    // style: 'grid-row: span 2; grid-column: span 5',
-  },
+  // {
+  //   image: '/img/tiles/6.jpg', title: 'Школа "Вектор Успеха"',
+  //   style: 'grid-row: span 2; grid-column: span 5',
+  // },
 
   {
-    image: '/img/tiles/3.jpg', title: 'Недвижимость ЖБК - 1',
+    image: '/test/img/tiles/corp/nedv.jpg', title: 'Недвижимость ЖБК - 1',
     style: ' grid-column: span 2; grid-row: span 2',
   },
 
   {
-    image: '/img/tiles/1.jpg', title: 'Наши обьекты',
+    image: '/test/img/tiles/zavod/akcii.jpg', title: 'Акции и скидки',
     style: 'grid-column: span 2',
   },
 
   {
-    image: '/img/tiles/2.jpg', title: 'Квартира дня',
-    grow: 2,
+    image: '/test/img/tiles/corp/komm.jpg', title: 'Коммерческая недвижимость',
   },
 
   {
-    image: '/img/tiles/4.jpg', title: 'АО Завод ЖБК - 1',
+    image: '/test/img/tiles/corp/zavod.jpg', title: 'АО Завод ЖБК - 1',
     style: ' grid-column: span 2',
   },
 
   {
-    image: '/img/tiles/5.jpg', title: 'ЖНК ЖБК - 1',
+    image: '/test/img/tiles/corp/jnk.jpg', title: 'ЖНК ЖБК - 1',
     style: 'grid-column: span 2',
   },
 
   {
-    image: '/img/tiles/7.jpg', title: 'Тротуарная плитка',
-    grow: 1,
-  },
-
-  {
-    image: '/img/tiles/8.jpg', title: 'Новости корпорации',
-    grow: 1,
+    image: '/test/img/tiles/corp/news.jpg', title: 'Новости корпорации',
+    style: 'grid-row: span'
   },
 
 ]

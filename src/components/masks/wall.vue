@@ -6,9 +6,9 @@ function mountedAnim () {
   animate(
     '.wallm__part',
     { 
-      translateX: [5, 0],
+      translateY: [-1, 0],
     },
-    { duration: 1, delay: stagger(0.03) }
+    { duration: 1.6, delay: stagger(0.01) }
   )
 }
 
