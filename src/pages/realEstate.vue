@@ -3,41 +3,54 @@ import rainVue from "@/components/masks/rain.vue";
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue";
 
+let devImg = '/public/img/tiles'
+let prodImg = '/test/img/tiles'
+let tilesPath = devImg
+
+
 let tileContent = [
   {
-    image: '/test/img/tiles/nedv/obj.jpg', title: 'Объекты строительства',
+    image: `${tilesPath}/nedv/obj.jpg`, title: 'Объекты строительства',
     grow: 2, style: 'grid-column: span 2; grid-row: span 2',
+    link: 'https://belbeton.ru/real-estate/construction/buildings/',
   },
 
   {
-    image: '/test/img/tiles/nedv/price.jpg', title: 'Прайс-лист',
+    image: `${tilesPath}/nedv/price.jpg`, title: 'Прайс-лист',
     style: 'grid-column: span 2',
+    link: 'https://belbeton.ru/real-estate/price-list-for-property/',
   },
 
   {
-    image: '/test/img/tiles/nedv/komm.jpg', title: 'Коммерческая недвижимость',
+    image: `${tilesPath}/nedv/komm.jpg`, title: 'Коммерческая недвижимость',
+    link: 'https://belbeton.ru/real-estate/construction/commercial-spaces/',
   },
 
   {
-    image: '/test/img/tiles/nedv/garages.jpg', title: 'Гаражи',
+    image: `${tilesPath}/nedv/garages.jpg`, title: 'Гаражи',
     style: ' grid-column: span 2 ',
+    link: 'https://belbeton.ru/real-estate/how-to-buy/',
   },
 
   {
-    image: '/test/img/tiles/nedv/kak.jpg', title: 'Как купить',
+    image: `${tilesPath}/nedv/kak.jpg`, title: 'Как купить',
+    link: 'https://belbeton.ru/real-estate/construction/garages/',
   },
 
   {
-    image: '/test/img/tiles/nedv/akcii.jpg', title: 'Акции и скидки',
+    image: `${tilesPath}/nedv/akcii.jpg`, title: 'Акции и скидки',
     style: ' grid-column: span 2 ',
+    link: 'https://belbeton.ru/real-estate/promotions-and-discounts/',
   },
 
   {
-    image: '/test/img/tiles/nedv/vopros.jpg', title: 'Вопрос-ответ',
+    image: `${tilesPath}/nedv/vopros.jpg`, title: 'Вопрос-ответ',
+    link: 'https://belbeton.ru/real-estate/question-answer/',
   },
 
   {
-    image: '/test/img/tiles/nedv/jnk.jpg', title: 'ЖНК ЖБК - 1',
+    image: `${tilesPath}/nedv/jnk.jpg`, title: 'ЖНК ЖБК - 1',
+    link: 'https://belbeton.ru/wnc/',
   },
 ]
 
@@ -79,5 +92,6 @@ let tileContent = [
 .home__tiles {
   position: relative;
   width: 100%;
+  height: 50vh;
 }
 </style>

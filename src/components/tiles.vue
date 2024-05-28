@@ -82,7 +82,7 @@ onMounted(() => {
 
 .tile {
   position: relative;
-  min-width: 200px; min-height: 200px;
+  min-width: 200px;
 
   display: flex;
   justify-content: stretch;
@@ -132,4 +132,15 @@ onMounted(() => {
   transition: .3s;
 }
 
+
+@media (max-width: 500px) {
+  .tile__holder {
+    grid-auto-flow: row dense;
+  }
+
+  .tile {
+    min-height: 200px;
+    min-width: 50px;
+  }
+}
 </style>

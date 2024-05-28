@@ -30,6 +30,19 @@ function  staticAnim () {
     { duration:15, repeat:Infinity, delay: stagger(0.7), easing: "linear" }
   )
 
+
+  // animate(
+  //   '.upAnim',
+  //   {  translateY: [0, 0.03, 0, -0.03, 0] },
+  //   { duration: 20, repeat: Infinity, delay: stagger(0.2), easing: "linear"}
+  // )
+
+  // animate(
+  //   '.downAnim',
+  //   { translateY: [0, -0.03, 0, 0.03, 0] },
+  //   { duration: 20, repeat: Infinity, delay: stagger(0.2), easing: "linear"},
+  // )
+
 }
 
 

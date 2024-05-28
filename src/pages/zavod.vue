@@ -3,44 +3,49 @@ import wallVue from "@/components/masks/wall.vue"
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue";
 
+let devImg = '/public/img/tiles'
+let prodImg = '/test/img/tiles'
+let tilesPath = devImg
+
+
 let tileContent = [
   {
-    image: '/test/img/tiles/zavod/im.jpg', title: 'Интернет - магазин',
+    image: `${tilesPath}/zavod/im.jpg`, title: 'Интернет - магазин',
     style: 'grid-row: span 2; grid-column: span 3',
-    link: '/',
+    link: 'https://belbeton.ru/building-materials/catalog/',
   },
 
   {
-    image: '/test/img/tiles/zavod/price.jpg', title: 'Прайс-листы',
-    link: '/',
+    image: `${tilesPath}/zavod/price.jpg`, title: 'Прайс-листы',
+    link: 'https://belbeton.ru/building-materials/price-list/',
   },
 
   {
-    image: '/test/img/tiles/zavod/conacts.jpg', title: 'Контакты',
-    link: '/',
+    image: `${tilesPath}/zavod/conacts.jpg`, title: 'Контакты',
+    link: 'https://belbeton.ru/building-materials/contacts/addresses-and-phone-numbers/',
   },
 
   {
-    image: '/test/img/tiles/zavod/dostavka.jpg', title: 'Доставка',
+    image: `${tilesPath}/zavod/dostavka.jpg`, title: 'Доставка',
     style: 'grid-column: span 2;',
-    link: '/',
+    link: 'https://belbeton.ru/building-materials/',
   },
 
   {
-    image: '/test/img/tiles/zavod/gallery.jpg', title: 'Галерея',
-    link: '/',
+    image: `${tilesPath}/zavod/gallery.jpg`, title: 'Галерея',
+    link: 'https://belbeton.ru/building-materials/',
   },
 
   {
-    image: '/test/img/tiles/zavod/akcii.jpg', title: 'Акции и скидки',
+    image: `${tilesPath}/zavod/akcii.jpg`, title: 'Акции и скидки',
     style: 'grid-column: span 2;',
-    link: '/',
+    link: 'https://belbeton.ru/building-materials/promotions-and-discounts/',
   },
 
 
   {
-    image: '/test/img/tiles/zavod/news.jpg', title: 'Блог',
-    link: '/',
+    image: `${tilesPath}/zavod/news.jpg`, title: 'Блог',
+    link: 'https://belbeton.ru/building-materials/article/',
     // style: 'grid-column: span 2;',
   },
 ]
@@ -83,5 +88,6 @@ let tileContent = [
 .zvd__tiles {
   position: absolute;
   width: 100%;
+  height: 50vh;
 }
 </style>

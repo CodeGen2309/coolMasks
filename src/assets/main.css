@@ -1,33 +1,33 @@
 @font-face {
   font-family: 'czizh';
-  src: url(/fonts/czizh.ttf);
+  src: url(/mainFonts/czizh.ttf);
 }
 
 @font-face {
   font-family: 'caviar';
-  src: url(/fonts/caviar.ttf);
+  src: url(/mainFonts/caviar.ttf);
 }
 
 @font-face {
   font-family: 'ac';
-  src: url(/fonts/ac.ttf);
+  src: url(/mainFonts/ac.ttf);
 }
 
 @font-face {
   font-family: 'hero';
   font-weight: 100;
-  src: url(/fonts/heroThin.ttf);
+  src: url(/mainFonts/heroThin.ttf);
 }
 
 @font-face {
   font-family: 'hero';
   font-weight: 500;
-  src: url(/fonts/heroRegular.ttf);
+  src: url(/mainFonts/heroRegular.ttf);
 }
 
 @font-face {
   font-family: 'zekton';
-  src: url(/fonts/zekton.ttf);
+  src: url(/mainFonts/zekton.ttf);
 }
 
 body {
