@@ -7,7 +7,7 @@ defineProps(['title'])
 <template>
   <div class="ptitle__container">
     <p class="ptitle__text">{{ title }}</p>
-    <img class="ptitle__decor" src="/icons/titleDecor.svg" alt="">
+    <img class="ptitle__decor" src="/mainIcons/titleDecor.svg" alt="">
   </div>
 </template>
 

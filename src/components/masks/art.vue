@@ -79,7 +79,7 @@ onMounted(() => {
 
 <template>
   <div class="cover">
-    <img class="cover__img" src="/img/15.jpg" alt="">
+    <img class="cover__img" src="/mainImages/15.jpg" alt="">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="0" heigth="0">
       <clipPath id="artm" clipPathUnits="objectBoundingBox">
@@ -128,5 +128,7 @@ onMounted(() => {
 .mpart {
   transform-box: fill-box;
   transform-origin: center;
+  -moz-transform-box: fill-box;
+  -moz-transform-origin: center;
 }
 </style>

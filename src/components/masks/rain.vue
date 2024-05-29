@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div class="rainm">
-    <img class="rainm__img" src="/img/13.jpg" alt="" />
+    <img class="rainm__img" src="/mainImages/13.jpg" alt="" />
 
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
       <clipPath id="rainm" clipPathUnits="objectBoundingBox">
@@ -90,6 +90,8 @@ onMounted(() => {
 #rainm {
   transform-box: fill-box;
   transform-origin: center;
+  -moz-transform-origin: center;
+  -moz-transform-box: fill-box;
 
   transform: rotate(20deg)  translateY(-650px) translateX(400px) scaleX(1.6);
   /* transform: rotate(60deg)  translateY(-1700px) translateX(100px) scale(1.3); */
@@ -98,5 +100,7 @@ onMounted(() => {
 .rainpart {
   transform-box: fill-box;
   transform-origin: center top;
+  -moz-transform-box: fill-box;
+  -moz-transform-origin: center top;
 }
 </style>

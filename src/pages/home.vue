@@ -3,9 +3,9 @@ import artVue from "@/components/masks/art.vue";
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue"
 
-let devImg = '/public/img/tiles'
-let prodImg = '/test/img/tiles'
-let tilesPath = devImg
+let devImg = '/public/mainImages/tiles'
+let prodImg = '/test/mainImages/tiles'
+let tilesPath = prodImg
 
 let tilesBkp = [
   // {

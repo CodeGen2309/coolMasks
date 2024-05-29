@@ -50,7 +50,7 @@ onMounted(() => {
 
 <template>
   <div class="wallm">
-    <img class="wallm__img" src="/img/17.jpg" alt="">
+    <img class="wallm__img" src="/mainImages/17.jpg" alt="">
 
       <svg xmlns="http://www.w3.org/2000/svg">
         <clipPath id="wallm" clipPathUnits="objectBoundingBox">
@@ -151,5 +151,7 @@ onMounted(() => {
 .wallm__part {
   transform-box: fill-box;
   transform-origin: center;
+  -moz-transform-box: fill-box;
+  -moz-transform-origin: center;
 }
 </style>

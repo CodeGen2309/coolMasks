@@ -4,7 +4,7 @@
 
 <template>
 <header class="header">
-  <img class="header__logo" src="/icons/ZHBK_logo 1.svg">
+  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
 
   <ul class="header__menu">
     <router-link  class="header__menuLink header__menuItem" to="/zavod">
@@ -20,7 +20,7 @@
     </router-link>
   </ul>
 
-  <img class="header__menuIcon" src="/icons/heroicons-solid_menu.svg" alt="">
+  <img class="header__menuIcon" src="/mainIcons/heroicons-solid_menu.svg" alt="">
 </header>
 </template>
 
