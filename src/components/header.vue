@@ -1,26 +1,55 @@
 <script setup>
+import menuSection from "@/components/menuSection.vue"
+import { ref } from "vue";
+
+let isMenuShow = ref(false)
+
+let HeadLinks = [
+  { link: '/zavod', text: 'Завод' },
+  { link: '/', text: 'Корпорация ЖБК - 1' },
+  { link: '/real-estate', text: 'Недвижимость' },
+]
+
 </script>
 
 
 <template>
 <header class="header">
-  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
+  <img class="header__menuIcon" 
+    src="/mainIcons/heroicons-solid_menu.svg"
+    @click="isMenuShow = !isMenuShow"
+  >
 
   <ul class="header__menu">
-    <router-link  class="header__menuLink header__menuItem" to="/zavod">
-      Завод
-    </router-link>
-    
-    <router-link class="header__menuLink header__menuItem" to="/">
-      Корпорация ЖБК - 1
-    </router-link>
+    <RouterLink to="/zavod"
+      class="header__menuItem header__menuLink"
+    > 
+    Завод
+    </RouterLink>
 
-    <router-link class="header__menuLink header__menuItem" to="/real-estate">
-      Недвижимость
-    </router-link>
+    <!-- <div class="header__decider"></div> -->
+    
+    <RouterLink to="/"
+      class="header__menuItem header__menuLink"
+    > 
+    Корпорация ЖБК - 1
+    </RouterLink>
+
+    <!-- <div class="header__decider"></div> -->
+    
+    <RouterLink to="/real-estate"
+      class="header__menuItem header__menuLink"
+    > 
+    Недвижимость
+    </RouterLink>    
   </ul>
 
-  <img class="header__menuIcon" src="/mainIcons/heroicons-solid_menu.svg" alt="">
+  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
+
+
+  <transition name = 'sideFade'>
+      <menuSection class="mainMenu" v-show = "isMenuShow"></menuSection>
+  </transition>
 </header>
 </template>
 
@@ -57,10 +86,13 @@
   transition: .3s;
 }
 
+
 .header__menuItem:hover {
-  background: rgb(107, 172, 236);
+  /* background: rgb(107, 172, 236); */
+  background: rgba(72, 126, 176, .7);
   padding: 20px 50px;
   color: white;
+  font-weight: 500;
 }
 
 .header__menuLink {
@@ -68,11 +100,27 @@
   color: inherit;  
 }
 
+.header__decider {
+  width: 1px; height: 40px;
+  background: rgba(0, 0, 0, .2);
+}
+
+.mainMenu {
+  transition: .3s;
+}
+
 
 .header__menuIcon {
   width: 20px;
   cursor: pointer;
 }
+
+.sideFade-enter-active,
+.sideFade-leave-active {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
 
 @media (max-width: 500px) {
   .header {

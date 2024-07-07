@@ -17,7 +17,9 @@ defineProps(['title'])
 
 .ptitle__container {
   position: absolute;
-  background: rgba(116, 185, 255, .9);
+  /* background: rgba(116, 185, 255, .9); */
+  background: rgba(72, 126, 176, .9);
+
 
   display: flex;
   justify-content: center;

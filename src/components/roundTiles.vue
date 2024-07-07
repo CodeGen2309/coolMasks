@@ -64,29 +64,27 @@ onMounted(() => {
     :href="item.link"
     :style="`${item.style}`"
     >
-      <img class="tile__img" :src="item.image" alt="">
-      <p class="tile__text">{{ item.title }}</p>
+    <img class="tile__img" :src="item.image" alt="">
+    <p class="tile__text">{{ item.title }}</p>
     </a>
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .tile__holder {
   display: grid;
   grid-auto-flow: column dense;
-  max-width: 95%;
-
   gap: 10px;
   padding: 20px; margin: 0 auto;
 }
 
 .tile {
   position: relative;
-
   display: flex;
-  justify-content: stretch;
-  align-items: end;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: white;
 
   border: 2px solid white;
   border-radius: 10px;
@@ -102,13 +100,11 @@ onMounted(() => {
 }
 
 .tile:hover {
-  /* border: 2px solid rgba(116, 185, 255, 1); */
-  border: 2px solid rgba(72, 126, 176,1.0);
+  border: 2px solid rgba(116, 185, 255, 1);
 }
 
 .tile:hover .tile__text {
-  /* background: rgba(116, 185, 255, 1); */
-  background: rgba(72, 126, 176, 1);
+  background: rgba(116, 185, 255, 1);
   font-weight: 500;
   color: white;
 }
@@ -116,9 +112,12 @@ onMounted(() => {
 
 
 .tile__img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  /* position: absolute; */
+  /* top: 0; left: 0; */
+  /* width: 100%;  */
+  height: 80%;
+  border-radius: 10px;
+  flex-grow: 1;
 
   object-fit: cover;
   object-position: center;
@@ -126,10 +125,10 @@ onMounted(() => {
 
 
 .tile__text {
-  margin: 0; padding: 15px 10px;
-  background: rgba(255, 255, 255, 1);
+  margin: 0; padding: 10px 10px;
+  /* background: rgba(255, 255, 255, .9); */
+  background: white;
   font-weight: 400;
-  width: 100%;
 
   position: relative;
   transition: .3s;

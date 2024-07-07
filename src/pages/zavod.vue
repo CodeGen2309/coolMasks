@@ -5,13 +5,14 @@ import tiles from "@/components/tiles.vue";
 
 let devImg = '/public/mainImages/tiles'
 let prodImg = '/test/mainImages/tiles'
-let tilesPath = prodImg
+let tilesPath = devImg
 
 
 let tileContent = [
   {
     image: `${tilesPath}/zavod/im.jpg`, title: 'Интернет - магазин',
     style: 'grid-row: span 2; grid-column: span 3',
+    // style: 'grid-row: span 2',
     link: 'https://belbeton.ru/building-materials/catalog/',
   },
 

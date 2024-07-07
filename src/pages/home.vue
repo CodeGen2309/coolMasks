@@ -2,17 +2,13 @@
 import artVue from "@/components/masks/art.vue";
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue"
+import menuSection from "@/components/menuSection.vue"
 
 let devImg = '/public/mainImages/tiles'
 let prodImg = '/test/mainImages/tiles'
-let tilesPath = prodImg
+let tilesPath = devImg
 
 let tilesBkp = [
-  // {
-  //   image: '/img/tiles/6.jpg', title: 'Школа "Вектор Успеха"',
-  //   style: 'grid-row: span 2; grid-column: span 5',
-  // },
-
   {
     image: `${tilesPath}/corp/nedv.jpg`, title: 'Недвижимость ЖБК - 1',
     style: ' grid-column: span 2; grid-row: span 2',
@@ -44,8 +40,13 @@ let tilesBkp = [
 
   {
     image: `${tilesPath}/corp/news.jpg`, title: 'Новости корпорации',
-    style: 'grid-row: span',
     link: 'https://belbeton.ru/corporation/news/',
+    style: ' grid-column: span 2',
+  },
+
+  {
+    image: `${tilesPath}/corp/socobj.jpg`, title: 'Социальные объекты',
+    link: '#',
   },
 
 ]
@@ -72,21 +73,23 @@ let tilesBkp = [
 
 .home__cover {
   position: absolute;
+  align-self: flex-start;
   z-index: -1;
-  height: 90vh;
+  height: 70vh;
 }
 
 
 .home__title {
   position: absolute;
-  top: 100px;
+  top: 50px;
   margin: 20px;
   font-size: 24px;
+  /* align-self: flex-start; */
 }
 
 .home__tiles {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height:55vh;
 }
 </style>

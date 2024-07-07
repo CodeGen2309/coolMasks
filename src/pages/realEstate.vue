@@ -5,19 +5,21 @@ import tiles from "@/components/tiles.vue";
 
 let devImg = '/public/mainImages/tiles'
 let prodImg = '/test/mainImages/tiles'
-let tilesPath = prodImg
+let tilesPath = devImg
+
 
 
 let tileContent = [
   {
     image: `${tilesPath}/nedv/obj.jpg`, title: 'Объекты строительства',
-    grow: 2, style: 'grid-column: span 2; grid-row: span 2',
+    // style: 'grid-column: span 2; grid-row: span 2',
+    style: 'grid-row: span 2',
     link: 'https://belbeton.ru/real-estate/construction/buildings/',
   },
 
   {
     image: `${tilesPath}/nedv/price.jpg`, title: 'Прайс-лист',
-    style: 'grid-column: span 2',
+    // style: 'grid-column: span 2',
     link: 'https://belbeton.ru/real-estate/price-list-for-property/',
   },
 
@@ -35,11 +37,12 @@ let tileContent = [
   {
     image: `${tilesPath}/nedv/kak.jpg`, title: 'Как купить',
     link: 'https://belbeton.ru/real-estate/construction/garages/',
+    style: ' grid-column: span 2 ',
   },
 
   {
     image: `${tilesPath}/nedv/akcii.jpg`, title: 'Акции и скидки',
-    style: ' grid-column: span 2 ',
+    // style: ' grid-column: span 2 ',
     link: 'https://belbeton.ru/real-estate/promotions-and-discounts/',
   },
 
@@ -48,10 +51,10 @@ let tileContent = [
     link: 'https://belbeton.ru/real-estate/question-answer/',
   },
 
-  {
-    image: `${tilesPath}/nedv/jnk.jpg`, title: 'ЖНК ЖБК - 1',
-    link: 'https://belbeton.ru/wnc/',
-  },
+  // {
+  //   image: `${tilesPath}/nedv/jnk.jpg`, title: 'ЖНК ЖБК - 1',
+  //   link: 'https://belbeton.ru/wnc/',
+  // },
 ]
 
 </script>
