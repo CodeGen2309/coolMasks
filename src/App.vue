@@ -7,7 +7,9 @@ import Header from './components/header.vue';
 
 <template>
   <Header />
+  
   <router-view class="route__component" v-slot="{ Component }">
+
   <transition name="routeFade">
     <component :is="Component" />
   </transition>
