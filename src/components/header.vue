@@ -15,13 +15,6 @@ let HeadLinks = [
   { link: '/real-estate', text: 'Недвижимость' },
 ]
 
-let menu = [
-  { link: '#', text: 'Корпорация' },
-  { link: '#', text: 'Недвижимость' },
-  { link: '#', text: 'Строительные материалы' },
-  { link: '#', text: 'ЖНК' },
-]
-
 
 function toggleMenu () {
   if (isMenuShow.value) {
@@ -60,29 +53,15 @@ function changeSubMenu (menuItem) {
   >
 
   <ul class="header__menu">
-    <RouterLink to="/zavod"
+    <RouterLink  v-for="item in HeadLinks" :key="item.link"
       class="header__menuItem header__menuLink"
+      :to="item.link"
     > 
-    Завод
-    </RouterLink>
-
-    
-    <RouterLink to="/"
-      class="header__menuItem header__menuLink"
-    > 
-    Корпорация ЖБК - 1
-    </RouterLink>
-
-    
-    <RouterLink to="/real-estate"
-      class="header__menuItem header__menuLink"
-    > 
-    Недвижимость
+    {{ item.text }}
     </RouterLink>    
   </ul>
 
   <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
-
 
   <transition name = 'sideFade'>
       <menuSection class="mainMenu"

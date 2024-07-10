@@ -1,12 +1,13 @@
 <script setup>
+import { getCurrentInstance } from "vue";
+
 import artVue from "@/components/masks/art.vue";
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue"
-import menuSection from "@/components/menuSection.vue"
 
-let devImg = '/public/mainImages/tiles'
-let prodImg = '/test/mainImages/tiles'
-let tilesPath = prodImg
+let globals  = getCurrentInstance().appContext.config.globalProperties
+let tilesPath = `${globals.$imgPath}/tiles/`
+
 
 let tilesBkp = [
   {
@@ -50,7 +51,6 @@ let tilesBkp = [
   },
 
 ]
-
 
 </script>
 

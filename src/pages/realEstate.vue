@@ -1,11 +1,13 @@
 <script setup>
+import { getCurrentInstance } from "vue";
+
 import rainVue from "@/components/masks/rain.vue";
 import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue";
 
-let devImg = '/public/mainImages/tiles'
-let prodImg = '/test/mainImages/tiles'
-let tilesPath = prodImg
+
+let globals  = getCurrentInstance().appContext.config.globalProperties
+let tilesPath = `${globals.$imgPath}/tiles/`
 
 
 
