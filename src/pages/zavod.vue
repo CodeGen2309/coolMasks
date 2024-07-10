@@ -4,8 +4,8 @@ import pageTitle from "@/components/pageTitle.vue";
 import tiles from "@/components/tiles.vue";
 
 let devImg = '/public/mainImages/tiles'
-let prodImg = '/test/mainImages/tiles'
-let tilesPath = devImg
+let prodImg = '/mainImages/tiles'
+let tilesPath = prodImg
 
 
 let tileContent = [

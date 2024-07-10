@@ -6,7 +6,7 @@ import menuSection from "@/components/menuSection.vue"
 
 let devImg = '/public/mainImages/tiles'
 let prodImg = '/test/mainImages/tiles'
-let tilesPath = devImg
+let tilesPath = prodImg
 
 let tilesBkp = [
   {
@@ -16,7 +16,7 @@ let tilesBkp = [
   },
 
   {
-    image: `${tilesPath}/zavod/akcii.jpg`, title: 'Акции и скидки',
+    image: `${tilesPath}/corp/akcii.jpg`, title: 'Акции и скидки',
     style: 'grid-column: span 2',
     link: 'https://belbeton.ru/real-estate/promotions-and-discounts/',
   },

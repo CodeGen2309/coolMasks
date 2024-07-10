@@ -5,7 +5,7 @@ import tiles from "@/components/tiles.vue";
 
 let devImg = '/public/mainImages/tiles'
 let prodImg = '/test/mainImages/tiles'
-let tilesPath = devImg
+let tilesPath = prodImg
 
 
 

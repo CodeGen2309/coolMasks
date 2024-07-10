@@ -1,5 +1,5 @@
 <script setup>
-import { animate, stagger, timeline } from "motion"
+import { animate, stagger } from "motion"
 import { onMounted } from "vue"
 
 function mountedAnim () {
@@ -116,11 +116,11 @@ onMounted(() => {
 
 .cover__img {
   position: absolute;
-  width: 93%; height:70vh;
-  filter: saturate(2) contrast(1.2);
+  width: 90%; height:70vh;
+  /* filter: saturate(2) contrast(1.2); */
 
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
 
   clip-path: url(#artm);
 }

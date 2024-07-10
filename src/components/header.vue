@@ -1,14 +1,53 @@
 <script setup>
 import menuSection from "@/components/menuSection.vue"
+
+import tMenu from '../../mocks/mainMenu.json'
 import { ref } from "vue";
 
 let isMenuShow = ref(false)
+let isSubMenuShow = ref(false)
+let subMenu = ref({})
+
 
 let HeadLinks = [
   { link: '/zavod', text: 'Завод' },
   { link: '/', text: 'Корпорация ЖБК - 1' },
   { link: '/real-estate', text: 'Недвижимость' },
 ]
+
+let menu = [
+  { link: '#', text: 'Корпорация' },
+  { link: '#', text: 'Недвижимость' },
+  { link: '#', text: 'Строительные материалы' },
+  { link: '#', text: 'ЖНК' },
+]
+
+
+function toggleMenu () {
+  if (isMenuShow.value) {
+    isMenuShow.value = false
+    isSubMenuShow.value = false
+  }
+
+  else {
+    isMenuShow.value = true
+  }
+}
+
+
+function changeSubMenu (menuItem) {
+  let newMenu = {
+    cover: menuItem.img,
+    name: menuItem.subMenu,
+  }
+
+  isSubMenuShow.value = false
+  
+  setTimeout(() => {
+    subMenu.value = newMenu
+    isSubMenuShow.value = true
+  }, 200)
+}
 
 </script>
 
@@ -17,7 +56,7 @@ let HeadLinks = [
 <header class="header">
   <img class="header__menuIcon" 
     src="/mainIcons/heroicons-solid_menu.svg"
-    @click="isMenuShow = !isMenuShow"
+    @click="toggleMenu()"
   >
 
   <ul class="header__menu">
@@ -27,7 +66,6 @@ let HeadLinks = [
     Завод
     </RouterLink>
 
-    <!-- <div class="header__decider"></div> -->
     
     <RouterLink to="/"
       class="header__menuItem header__menuLink"
@@ -35,7 +73,6 @@ let HeadLinks = [
     Корпорация ЖБК - 1
     </RouterLink>
 
-    <!-- <div class="header__decider"></div> -->
     
     <RouterLink to="/real-estate"
       class="header__menuItem header__menuLink"
@@ -48,7 +85,20 @@ let HeadLinks = [
 
 
   <transition name = 'sideFade'>
-      <menuSection class="mainMenu" v-show = "isMenuShow"></menuSection>
+      <menuSection class="mainMenu"
+        :menu="tMenu.mainMenu" v-show = "isMenuShow"
+        @hover="changeSubMenu"
+      >
+      </menuSection>
+  </transition>
+
+  <transition name = 'sideFade'>
+      <menuSection class="subMenu"
+      :menu="tMenu[subMenu.name]"
+      :cover="subMenu.cover"
+        v-show="isSubMenuShow"
+      >
+      </menuSection>
   </transition>
 </header>
 </template>
@@ -106,6 +156,19 @@ let HeadLinks = [
 }
 
 .mainMenu {
+  position: absolute;
+  top: 60px; left: 0;
+  bottom: 0;
+
+  transition: .3s;
+}
+
+.subMenu {
+  position: absolute;
+  top: 60px; left: 400px;
+  bottom: 0;
+  z-index: 999;
+
   transition: .3s;
 }
 
