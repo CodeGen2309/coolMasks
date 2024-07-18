@@ -47,6 +47,8 @@ function changeSubMenu (menuItem) {
 
 <template>
 <header class="header">
+  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
+
   <img class="header__menuIcon" 
     src="/mainIcons/heroicons-solid_menu.svg"
     @click="toggleMenu()"
@@ -61,7 +63,11 @@ function changeSubMenu (menuItem) {
     </RouterLink>    
   </ul>
 
-  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
+  <div class="header__phone">
+    <img class="header__phoneImg" src="/mainIcons/phone.png">
+    <p class="header__phoneText"> +7 (4722) 37-63-33 </p>
+  </div>
+
 
   <transition name = 'sideFade'>
       <menuSection class="mainMenu"
@@ -87,6 +93,7 @@ function changeSubMenu (menuItem) {
 .header {
   display: flex;
   align-items: center;
+  gap: 20px;
 
   padding: 0 20px;
   box-sizing: border-box;
@@ -100,7 +107,7 @@ function changeSubMenu (menuItem) {
 
 .header__menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   list-style: none;
@@ -109,7 +116,7 @@ function changeSubMenu (menuItem) {
 }
 
 .header__menuItem {
-  padding: 20px 30px;
+  padding: 20px;
   font-weight: 100;
   cursor: pointer;
   transition: .3s;
@@ -134,6 +141,22 @@ function changeSubMenu (menuItem) {
   background: rgba(0, 0, 0, .2);
 }
 
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__phoneImg {
+  opacity: 0.7;
+  width: 30px;
+}
+
+.header__phoneText {
+  font-weight: 100;
+  margin: 0; padding: 0;
+}
+
 .mainMenu {
   position: absolute;
   top: 60px; left: 0;
@@ -155,6 +178,7 @@ function changeSubMenu (menuItem) {
 .header__menuIcon {
   width: 20px;
   cursor: pointer;
+  padding-left: 20px;
 }
 
 .sideFade-enter-active,
