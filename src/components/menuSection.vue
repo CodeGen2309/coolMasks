@@ -35,7 +35,7 @@ defineProps(['cover', 'menu'])
 .smenu {
   background: white;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, .4);
-  min-width: 400px;
+  /* min-width: 400px; */
 
   display: flex;
   flex-direction: column;

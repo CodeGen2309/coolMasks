@@ -71,13 +71,13 @@ function changeSubMenu (menuItem) {
 
   <transition name = 'sideFade'>
       <menuSection class="mainMenu"
-        :menu="tMenu.mainMenu" v-show = "isMenuShow"
+        :menu="tMenu.mainMenu" v-if = "isMenuShow"
         @hover="changeSubMenu"
       >
       </menuSection>
   </transition>
 
-  <transition name = 'sideFade'>
+  <transition name = 'subFade'>
       <menuSection class="subMenu"
       :menu="tMenu[subMenu.name]"
       :cover="subMenu.cover"
@@ -157,22 +157,48 @@ function changeSubMenu (menuItem) {
   margin: 0; padding: 0;
 }
 
+
 .mainMenu {
   position: absolute;
   top: 60px; left: 0;
-  bottom: 0;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(10px);
 
   transition: .3s;
+}
+
+.mainMenu::-webkit-scrollbar {
+  display: none;
+}
+
+.mainMenu li {
+}
+
+.mainMenu a {
+  margin: 0; padding: 20px;
 }
 
 .subMenu {
   position: absolute;
-  top: 60px; left: 400px;
+  top: 60px; left: 320px;
   bottom: 0;
   z-index: 999;
+  margin: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(10px);
+  width: 400px;
 
   transition: .3s;
 }
+
+.subMenu::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 .header__menuIcon {
@@ -183,7 +209,13 @@ function changeSubMenu (menuItem) {
 
 .sideFade-enter-active,
 .sideFade-leave-active {
-  transform: translateX(-50px);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.subFade-enter-active,
+.subFade-leave-active {
+  transform: translateX(-20px);
   opacity: 0;
 }
 
