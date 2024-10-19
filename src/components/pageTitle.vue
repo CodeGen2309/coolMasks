@@ -1,6 +1,5 @@
 <script setup>
-defineProps(['title'])
-
+  defineProps(['title'])
 </script>
 
 
@@ -14,6 +13,7 @@ defineProps(['title'])
 
 <style>
 .ptitle {}
+
 
 .ptitle__container {
   position: absolute;
@@ -29,11 +29,13 @@ defineProps(['title'])
   box-sizing: border-box;
 }
 
+
 .ptitle__text {
   position: absolute;
   color: white;
   font-weight: 500;
 }
+
 
 .ptitle__decor {
   max-width: 100%;

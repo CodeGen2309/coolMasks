@@ -73,7 +73,7 @@ onMounted(() => {
 <style>
 .rainm {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 90vh;
 }
 
@@ -81,9 +81,9 @@ onMounted(() => {
 .rainm__img {
   position: absolute;
   right: 0;
-  width: 100%; height: 80vh;
+  width: 100%; height: 100vh;
   object-fit: cover;
-  object-position: right;
+  object-position: top;
   clip-path: url(#rainm);
 }
 

@@ -13,25 +13,25 @@ let tilesPath = `${globals.$imgPath}/tiles/`
 
 let tileContent = [
   {
-    image: `${tilesPath}/nedv/obj.jpg`, title: 'Объекты строительства',
+    image: `${tilesPath}/nedv/objnew.jpg`, title: 'Объекты строительства',
     // style: 'grid-column: span 2; grid-row: span 2',
     style: 'grid-row: span 2',
     link: 'https://belbeton.ru/real-estate/construction/buildings/',
   },
 
   {
-    image: `${tilesPath}/nedv/price.jpg`, title: 'Прайс-лист',
+    image: `${tilesPath}/nedv/pricenew.jpg`, title: 'Прайс-лист',
     // style: 'grid-column: span 2',
     link: 'https://belbeton.ru/real-estate/price-list-for-property/',
   },
 
   {
-    image: `${tilesPath}/nedv/komm.jpg`, title: 'Коммерческая недвижимость',
+    image: `${tilesPath}/nedv/kommnew.jpg`, title: 'Коммерческая недвижимость',
     link: 'https://belbeton.ru/real-estate/construction/commercial-spaces/',
   },
 
   {
-    image: `${tilesPath}/nedv/garages.jpg`, title: 'Гаражи',
+    image: `${tilesPath}/nedv/garagesnew.jpg`, title: 'Паркинги',
     style: ' grid-column: span 2 ',
     link: 'https://belbeton.ru/real-estate/how-to-buy/',
   },
@@ -77,22 +77,24 @@ let tileContent = [
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 90vh;
-
+  height: 100vh;
 }
+
 
 .rest__cover {
   position: absolute;
+  top: -500px; right: -200px;
   z-index: -1;
 }
 
 
 .rest__title {
   position: absolute;
-  top: 100px;
+  top: 200px;
   margin: 20px;
   font-size: 24px;
 }
+
 
 .home__tiles {
   position: relative;

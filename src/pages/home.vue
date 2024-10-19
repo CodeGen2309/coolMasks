@@ -11,27 +11,39 @@ let tilesPath = `${globals.$imgPath}/tiles/`
 
 let tilesBkp = [
   {
-    image: `${tilesPath}/corp/nedv.jpg`, title: 'Недвижимость ЖБК - 1',
+    image: `${tilesPath}/corp/zavodnew.webp`, title: 'АО Завод ЖБК - 1',
+    style: ' grid-column: span 2; grid-row: span 2',
+    link: 'https://belbeton.ru/building-materials/catalog/',
+  },
+
+
+  {
+    image: `${tilesPath}/corp/nedvnew.jpg`, title: 'Недвижимость ЖБК - 1',
     style: ' grid-column: span 2; grid-row: span 2',
     link: 'https://belbeton.ru/real-estate/',
   },
 
-  {
-    image: `${tilesPath}/corp/akcii.jpg`, title: 'Акции и скидки',
-    style: 'grid-column: span 2',
-    link: 'https://belbeton.ru/real-estate/promotions-and-discounts/',
-  },
+
+  // {
+  //   image: `${tilesPath}/corp/akcii.jpg`, title: 'Акции и скидки',
+  //   style: 'grid-column: span 2',
+  //   link: 'https://belbeton.ru/real-estate/promotions-and-discounts/',
+  // },
+  
 
   {
-    image: `${tilesPath}/corp/komm.jpg`, title: 'Коммерческая недвижимость',
+    image: `${tilesPath}/corp/kommnew.jpg`, title: 'Коммерческая недвижимость',
     link: 'https://belbeton.ru/real-estate/construction/commercial-spaces/',
   },
 
-  {
-    image: `${tilesPath}/corp/zavod.jpg`, title: 'АО Завод ЖБК - 1',
-    style: ' grid-column: span 2',
-    link: 'https://belbeton.ru/building-materials/catalog/',
-  },
+
+  // {
+  //   image: `${tilesPath}/zavod/im.jpg`, title: 'Интернет - магазин',
+  //   style: 'grid-row: span 2; grid-column: span 3',
+  //   // style: 'grid-row: span 2',
+  //   link: 'https://belbeton.ru/building-materials/catalog/',
+  // },
+
 
   {
     image: `${tilesPath}/corp/jnk.jpg`, title: 'ЖНК ЖБК - 1',
@@ -63,33 +75,36 @@ let tilesBkp = [
 </template>
 
 
-<style>
+<style  >
 .home__holder {
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 90vh;
+  justify-content: center;
+  height: 100vh;
 }
+
 
 .home__cover {
   position: absolute;
-  align-self: flex-start;
+  top: -80px; right: -130px;
+  width: 80%;
   z-index: -1;
-  height: 70vh;
 }
 
 
 .home__title {
   position: absolute;
-  top: 50px;
-  margin: 20px;
+  top: 20%; left: 0;
+  margin: 0 30px;
   font-size: 24px;
-  /* align-self: flex-start; */
 }
 
 .home__tiles {
   position: relative;
   width: 100%;
   height:55vh;
+  margin: 40px;
+  margin-right: 10%;
 }
 </style>

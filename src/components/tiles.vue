@@ -58,6 +58,8 @@ onMounted(() => {
 </script>
 
 
+
+
 <template>
   <div class="tile__holder">
     <a class="tile" v-for="item of tiles" :key="item.title"
@@ -70,16 +72,18 @@ onMounted(() => {
   </div>
 </template>
 
-<style>
 
+
+
+<style>
 .tile__holder {
   display: grid;
   grid-auto-flow: column dense;
-  max-width: 95%;
 
-  gap: 10px;
-  padding: 20px; margin: 0 auto;
+  gap: 30px;
+  margin: 40px 100px;
 }
+
 
 .tile {
   position: relative;
@@ -88,7 +92,7 @@ onMounted(() => {
   justify-content: stretch;
   align-items: end;
 
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px;
   overflow: hidden;
 
@@ -96,15 +100,17 @@ onMounted(() => {
   color: inherit;
 
 
-  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .5);
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, .3);
   transition: .3s;
   cursor: pointer;
 }
 
+
 .tile:hover {
   /* border: 2px solid rgba(116, 185, 255, 1); */
-  border: 2px solid rgba(72, 126, 176,1.0);
+  /* border: 2px solid rgba(72, 126, 176,1.0); */
 }
+
 
 .tile:hover .tile__text {
   /* background: rgba(116, 185, 255, 1); */
@@ -112,7 +118,6 @@ onMounted(() => {
   font-weight: 500;
   color: white;
 }
-
 
 
 .tile__img {

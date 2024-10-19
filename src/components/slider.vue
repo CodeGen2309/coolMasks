@@ -6,7 +6,7 @@
   let activeSlide = ref({
     img: '/public/img/1.jpg', title: 'Slide title',
     footNote: 'footNote',
-    })
+  })
 
 
   let slides = [

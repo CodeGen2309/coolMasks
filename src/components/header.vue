@@ -45,27 +45,35 @@ function changeSubMenu (menuItem) {
 </script>
 
 
+
 <template>
 <header class="header">
-  <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
+  <div class="header__left">
+    <div class="header__inner">
+      <img class="header__logo" src="/mainIcons/ZHBK_logo1.svg">
 
-  <img class="header__menuIcon" 
-    src="/mainIcons/heroicons-solid_menu.svg"
-    @click="toggleMenu()"
-  >
+      <img class="header__menuIcon" 
+        src="/mainIcons/heroicons-solid_menu.svg"
+        @click="toggleMenu()"
+      >
 
-  <ul class="header__menu">
-    <RouterLink  v-for="item in HeadLinks" :key="item.link"
-      class="header__menuItem header__menuLink"
-      :to="item.link"
-    > 
-    {{ item.text }}
-    </RouterLink>    
-  </ul>
+      <ul class="header__menu">
+        <RouterLink  v-for="item in HeadLinks" :key="item.link"
+          class="header__menuItem header__menuLink"
+          :to="item.link"
+        > 
+        {{ item.text }}
+        </RouterLink>    
+      </ul>
+    </div>
+  </div>
+
 
   <div class="header__phone">
-    <img class="header__phoneImg" src="/mainIcons/phone.png">
-    <p class="header__phoneText"> +7 (4722) 37-63-33 </p>
+    <div class="header__phone__inner">
+      <img class="header__phoneImg" src="/mainIcons/phone.png">
+      <p class="header__phoneText"> +7 (4722) 37-63-33 </p>
+    </div>
   </div>
 
 
@@ -88,18 +96,46 @@ function changeSubMenu (menuItem) {
 </header>
 </template>
 
+
+
 <style>
 
 .header {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+.header__left {
+  transform: skewX(-40deg);
+  background: white;
+  box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, .1);
+  margin-left: -40px;
+  padding: 0 40px;
+}
+
+.header__left:hover .header__menuItem{
+  padding: 20px 40px;
+}
+
+.header__inner {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 20px;
-
   padding: 0 20px;
-  box-sizing: border-box;
-  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .2);
-  background: white;
+
+  transform: skewX(40deg);
 }
+
+
 
 .header__logo {
   width: 30px;
@@ -124,9 +160,7 @@ function changeSubMenu (menuItem) {
 
 
 .header__menuItem:hover {
-  /* background: rgb(107, 172, 236); */
   background: rgba(72, 126, 176, .7);
-  padding: 20px 50px;
   color: white;
   font-weight: 500;
 }
@@ -142,10 +176,22 @@ function changeSubMenu (menuItem) {
 }
 
 .header__phone {
+  background: white;
+  transform: skewX(40deg);
+  padding: 10px 60px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+  margin-right: -40px;
+}
+
+
+.header__phone__inner {
   display: flex;
   align-items: center;
   gap: 4px;
+
+  transform: skewX(-40deg);
 }
+
 
 .header__phoneImg {
   opacity: 0.7;

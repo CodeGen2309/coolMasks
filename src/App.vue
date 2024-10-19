@@ -15,7 +15,11 @@ import Header from './components/header.vue';
   </transition>
 </router-view></template>
 
-<style scoped>
+<style>
+  body  {
+    background: #f5f6fa;
+  }
+
   .route__component {
     transition: 1s;
   }

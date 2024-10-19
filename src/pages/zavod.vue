@@ -72,7 +72,7 @@ let tileContent = [
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 90vh; 
+  height: 100vh; 
 }
 
 .zvd__cover {
@@ -83,14 +83,16 @@ let tileContent = [
 
 .zvd__title {
   position: absolute;
-  top: 100px;
-  margin: 20px;
+  top: 20%;
+  margin: 40px;
   font-size: 24px;
 }
 
 .zvd__tiles {
   position: absolute;
-  width: 100%;
+  left: 0;
+  width: 80%;
   height: 50vh;
+  margin: 40px; padding: 0;
 }
 </style>
